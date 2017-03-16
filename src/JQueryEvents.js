@@ -17,6 +17,7 @@ $(document).ready(function() {
     var selectedTemp = $('input[type="radio"]:checked');
     if(selectedTemp.length > 0) {
       thermostat.adjustTemp(selectedTemp.val());
+      $(selectedTemp).prop('checked', false);
       updateTemp();
     } else {
       alert("No temperature selected");
@@ -27,6 +28,6 @@ $(document).ready(function() {
     $("#current-temperature").html(thermostat.currentTemp);
     $("#energy-bar").html(thermostat.currentEnergyUsage());
     $("#energy-bar").attr('class', thermostat.currentEnergyUsage());
-  }
+  };
 
 });
