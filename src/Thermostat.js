@@ -13,6 +13,7 @@ Thermostat.prototype.getCurrentTemp = function() {
 };
 
 Thermostat.prototype.adjustTemp = function(desiredTemp) {
+  var desiredTemp = Number(desiredTemp);
   var difference = desiredTemp - this.currentTemp;
   if (this.currentTemp + difference > this.MAXIMUM_TEMP) {
     this.currentTemp = this.MAXIMUM_TEMP;

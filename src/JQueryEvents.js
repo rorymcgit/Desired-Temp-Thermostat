@@ -4,7 +4,7 @@ $(document).ready(function() {
   $("#temperature-reset").click(function(event) {
     thermostat.reset();
     console.log("Thermostat has been reset to " + thermostat.currentTemp);
-    $("#current-temperature").html(thermostat.currentTemp);
+    updateTemp();
   });
 
   $("#powersaving-status").click(function(event) {
@@ -17,10 +17,16 @@ $(document).ready(function() {
     var selectedTemp = $('input[type="radio"]:checked');
     if(selectedTemp.length > 0) {
       thermostat.adjustTemp(selectedTemp.val());
-      $("#current-temperature").html(thermostat.currentTemp);
+      updateTemp();
     } else {
       alert("No temperature selected");
     };
   });
+
+  function updateTemp() {
+    $("#current-temperature").html(thermostat.currentTemp);
+    $("#energy-bar").html(thermostat.currentEnergyUsage());
+    $("#energy-bar").attr('class', thermostat.currentEnergyUsage());
+  }
 
 });
