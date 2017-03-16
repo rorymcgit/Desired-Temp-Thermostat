@@ -6,6 +6,7 @@
   </head>
 
   <body>
+    <script src="jquery.js"></script>
     <h1 id="temperature" style="font-size:34px;">Thermostat</h1>
     <img style="margin-left:30px;float:left;" src="http://www.clker.com/cliparts/p/W/e/k/U/d/blank-fundraising-thermometer-hi.png"/>
     <form style="float:left;padding-top:60px;" method="POST" action="#">
@@ -32,10 +33,12 @@
       <input id="temp-value" type="radio" name="degrees" value="30">30<br>
       <input id="temp-value" type="radio" name="degrees" value="31">31<br>
       <input id="temp-value" type="radio" name="degrees" value="32">32<br>
-      <button style="background-color:orange; margin-top:15px;" type="submit" value="Set Temp">Set Temp</button>
+      <button id="set-temp" style="background-color:orange; margin-top:15px;" type="submit" value="Set Temp">Set Temp</button>
     </form>
     <button id="temperature-reset" style="background-color:black; color:white; margin-top:15px;" type="submit" value="set-temp">Reset</button>
+    <script type="text/javascript" src="src/JQueryEvents.js"></script>
     <button id="powersaving-status" style="background-color:orange; margin-top:15px;" type="submit" value="psm">PSM</button>
     <div id="energy-bar" style="float:left;background-color:orange; margin-top:15px; margin-right:5px;border:2px solid grey; width:60px; height:17px;padding-top:1px;">Medium</div>
+    <div id="current-temperature" style="float:bottom; margin-top:200px;">Current Temperature</div>
   </body>
 </html>
