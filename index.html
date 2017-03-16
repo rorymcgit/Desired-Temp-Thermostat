@@ -8,38 +8,39 @@
 
   <body>
     <script src="jquery.js"></script>
+    <div id="weather" style="float:right;font-size:20px;">The current weather is </div>
     <h1 id="temperature" style="font-size:34px;">Thermostat</h1>
     <img style="margin-left:30px;float:left;" src="http://www.clker.com/cliparts/p/W/e/k/U/d/blank-fundraising-thermometer-hi.png"/>
     <div id="temp" style="float:left;padding-top:60px;" method="POST" action="#">
-      <input class="temp-value" type="radio" name="degrees" value="10">10<br>
-      <input class="temp-value" type="radio" name="degrees" value="11">11<br>
-      <input class="temp-value" type="radio" name="degrees" value="12">12<br>
-      <input class="temp-value" type="radio" name="degrees" value="13">13<br>
-      <input class="temp-value" type="radio" name="degrees" value="14">14<br>
-      <input class="temp-value" type="radio" name="degrees" value="15">15<br>
-      <input class="temp-value" type="radio" name="degrees" value="16">16<br>
-      <input class="temp-value" type="radio" name="degrees" value="17">17<br>
-      <input class="temp-value" type="radio" name="degrees" value="18">18<br>
-      <input class="temp-value" type="radio" name="degrees" value="19">19<br>
-      <input class="temp-value" type="radio" name="degrees" value="20">20<br>
-      <input class="temp-value" type="radio" name="degrees" value="21">21<br>
-      <input class="temp-value" type="radio" name="degrees" value="22">22<br>
-      <input class="temp-value" type="radio" name="degrees" value="23">23<br>
-      <input class="temp-value" type="radio" name="degrees" value="24">24<br>
-      <input class="temp-value" type="radio" name="degrees" value="25">25<br>
-      <input class="temp-value" type="radio" name="degrees" value="26">26<br>
-      <input class="temp-value" type="radio" name="degrees" value="27">27<br>
-      <input class="temp-value" type="radio" name="degrees" value="28">28<br>
-      <input class="temp-value" type="radio" name="degrees" value="29">29<br>
-      <input class="temp-value" type="radio" name="degrees" value="30">30<br>
-      <input class="temp-value" type="radio" name="degrees" value="31">31<br>
       <input class="temp-value" type="radio" name="degrees" value="32">32<br>
-      <button id="set-temp" style="background-color:orange; margin-top:15px;" type="submit" value="Set Temp">Set Temp</button>
+      <input class="temp-value" type="radio" name="degrees" value="31">31<br>
+      <input class="temp-value" type="radio" name="degrees" value="30">30<br>
+      <input class="temp-value" type="radio" name="degrees" value="29">29<br>
+      <input class="temp-value" type="radio" name="degrees" value="28">28<br>
+      <input class="temp-value" type="radio" name="degrees" value="27">27<br>
+      <input class="temp-value" type="radio" name="degrees" value="26">26<br>
+      <input class="temp-value" type="radio" name="degrees" value="25">25<br>
+      <input class="temp-value" type="radio" name="degrees" value="24">24<br>
+      <input class="temp-value" type="radio" name="degrees" value="23">23<br>
+      <input class="temp-value" type="radio" name="degrees" value="22">22<br>
+      <input class="temp-value" type="radio" name="degrees" value="21">21<br>
+      <input class="temp-value" type="radio" name="degrees" value="20">20<br>
+      <input class="temp-value" type="radio" name="degrees" value="19">19<br>
+      <input class="temp-value" type="radio" name="degrees" value="18">18<br>
+      <input class="temp-value" type="radio" name="degrees" value="17">17<br>
+      <input class="temp-value" type="radio" name="degrees" value="16">16<br>
+      <input class="temp-value" type="radio" name="degrees" value="15">15<br>
+      <input class="temp-value" type="radio" name="degrees" value="14">14<br>
+      <input class="temp-value" type="radio" name="degrees" value="13">13<br>
+      <input class="temp-value" type="radio" name="degrees" value="12">12<br>
+      <input class="temp-value" type="radio" name="degrees" value="11">11<br>
+      <input class="temp-value" type="radio" name="degrees" value="10">10<br>
+      <button id="set-temp" style="background-color:orange; float:right;" type="submit" value="Set Temp">Set Temp</button>
     </div>
     <button id="temperature-reset" style="background-color:black; color:white; margin-top:15px;" type="submit" value="set-temp">Reset</button>
     <script type="text/javascript" src="src/JQueryEvents.js"></script>
-    <button id="powersaving-status" style="background-color:orange; margin-top:15px;" type="submit" value="psm">PSM is true</button>
+    <button id="powersaving-status" style="background-color:orange; margin-top:15px;" type="submit" value="psm">Power Saving Mode: on</button>
     <div id="energy-bar" style="float:left; margin-top:15px; margin-right:5px;border:2px solid grey; width:100px; height:17px;padding-top:1px;">medium-usage</div>
-    <div id="current-temperature" style="float:bottom; margin-top:200px;">20</div>
+    <div id="current-temperature" style="font-size:34px; float:bottom; margin-top:200px;">20&#176;</div>
   </body>
 </html>
