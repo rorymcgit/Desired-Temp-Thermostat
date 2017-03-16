@@ -9,7 +9,6 @@ describe('Thermostat', function() {
   });
 
   describe('thermostat default properties', function() {
-
     it('starts at 20 degrees', function() {
       expect(thermostat.getCurrentTemp()).toEqual(20);
     });
@@ -19,11 +18,9 @@ describe('Thermostat', function() {
       thermostat.reset();
       expect(thermostat.getCurrentTemp()).toEqual(20);
     });
-
   });
 
   describe('temperature adjustment', function() {
-
     it('increases the temperature to 21', function() {
       thermostat.adjustTemp(21);
       expect(thermostat.getCurrentTemp()).toEqual(21);
@@ -33,11 +30,9 @@ describe('Thermostat', function() {
       thermostat.adjustTemp(18);
       expect(thermostat.getCurrentTemp()).toEqual(18);
     });
-
   });
 
   describe('minimum and maximum temperatures', function() {
-
     it('temperature cannot be set below 10 degrees', function() {
       thermostat.adjustTemp(9);
       expect(thermostat.getCurrentTemp()).toEqual(10);
@@ -48,11 +43,9 @@ describe('Thermostat', function() {
       thermostat.adjustTemp(33);
       expect(thermostat.getCurrentTemp()).toEqual(32);
     });
-
   });
 
   describe('power saving mode', function() {
-
     it('power saving mode is on by default', function() {
       expect(thermostat.powerSavingMode).toEqual(true);
     });
@@ -66,11 +59,9 @@ describe('Thermostat', function() {
       thermostat.setPowerSavingMode();
       expect(thermostat.powerSavingMode).toEqual(false);
     });
-
   });
 
   describe('energy usage', function() {
-
     it('reports low usage when below 18 degrees', function() {
       thermostat.adjustTemp(15);
       expect(thermostat.currentEnergyUsage()).toEqual('low-usage');
