@@ -1,6 +1,10 @@
 var thermostat = new Thermostat();
 
 $(document).ready(function() {
+
+  $("#current-temperature").fadeOut(10);
+  $("#current-temperature").fadeIn(1000);
+
   $("#energy-bar").attr('class', thermostat.currentEnergyUsage())
 
   $("#temperature-reset").click(function(event) {
@@ -38,11 +42,11 @@ $(document).ready(function() {
     $("#energy-bar").attr('class', thermostat.currentEnergyUsage());
   };
 
-  $.getJSON("http://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=ef8f6131668f4df4ab40159758f399c2&units=metric",function(result) {
+  $.get("http://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=ef8f6131668f4df4ab40159758f399c2&units=metric", function(result) {
     var weather = result.weather[0].description;
     var temperature = result.main.temp;
     $('#city').html(result.name);
     $('#weather').append(weather, ".");
-    $('#outside-temp').append(temperature, "&#176;.");
+    $('#outside-temp').append(temperature, "&#176;C.");
   });
 });
