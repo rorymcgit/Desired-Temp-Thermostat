@@ -1,6 +1,7 @@
 # Thermostat
 
 This is an implementation of the Makers Academy Week 5 Thermostat Challenge. In this project I diverged slightly from the path of implementing a simple thermostat where the user clicks a button to increase/decrease the temperature by a degree at a time. Instead, the user selects their desired temperature from a range of values.  
+  
 I have used a weather API (openweathermap.org) to display the outside weather conditions and temperature for London.
 
 * Thermostat starts at 20 degrees
