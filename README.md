@@ -20,7 +20,7 @@ I have used a weather API (openweathermap.org) to display the outside weather co
 #### Instructions for use:
 - Clone this repo
 - In your browser, open ```SpecRunner.html``` to view tests
-- In your browser, open ```index.html``` to use web app
+- In your browser, open ```index.html``` to use the app
 - Select desired temperature, set power saving mode off/on,  reset the temperature to default
 
 ![thermostat](https://github.com/rorymcgit/thermostat-JavaScript/blob/master/Thermostat_highusage.png)
