@@ -20,6 +20,8 @@ I have used a weather API (openweathermap.org) to display the outside weather co
 - In your browser, open ```index.html```
 - Select desired temperature, set power saving mode off/on,  reset the temperature to default
 
+![thermostat](https://github.com/rorymcgit/thermostat-JavaScript/blob/master/Thermostat_highusage.png)
+
 #### Technologies used:
 - JavaScript
 - JQuery
